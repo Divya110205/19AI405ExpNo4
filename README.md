@@ -23,6 +23,7 @@
     
     d) for each successor    
         1. if successor is the goal, stop search
+    
         2. else, compute both g and h for successor
           successor.g = q.g + distance between successor and q
           successor.h = distance from goal to successor (This can be done using many ways, we will discuss three heuristics- Manhattan, Diagonal and Euclidean Heuristics)
