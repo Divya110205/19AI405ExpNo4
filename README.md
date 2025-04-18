@@ -23,10 +23,10 @@
     
     d) for each successor
     
-        i) if successor is the goal, stop search
+        1. if successor is the goal, stop search
 
     
-        ii) else, compute both g and h for successor
+        2. else, compute both g and h for successor
           successor.g = q.g + distance between 
                               successor and q
           successor.h = distance from goal to 
@@ -37,12 +37,12 @@
           successor.f = successor.g + successor.h
 
     
-        iii) if a node with the same position as 
+        3. if a node with the same position as 
             successor is in the OPEN list which has a 
            lower f than successor, skip this successor
 
     
-        iV) if a node with the same position as 
+        4. if a node with the same position as 
             successor  is in the CLOSED list which has
             a lower f than successor, skip this successor
             otherwise, add  the node to the open list
