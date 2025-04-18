@@ -23,7 +23,15 @@
     
     d) for each successor    
         1. if successor is the goal, stop search
+        
+        2. else, compute both g and h for successor
+          successor.g = q.g + distance between successor and q
+          successor.h = distance from goal to successor (This can be done using many ways, we will discuss three heuristics- Manhattan, Diagonal and Euclidean Heuristics)
+          successor.f = successor.g + successor.h
     
+        3. if a node with the same position as successor is in the OPEN list which has a lower f than successor, skip this successor
+    
+        4. if a node with the same position as successor  is in the CLOSED list which has a lower f than successor, skip this successor otherwise, add  the node to the open list end (for loop)
 
     e) push q on the closed list
     end (while loop)
