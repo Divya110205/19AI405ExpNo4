@@ -5,6 +5,7 @@
 <p>To ImplementA * Search algorithm for a Graph using Python 3.</p>
 <H3>Algorithm:</H3>
 
+```
 // A* Search Algorithm
 1.  Initialize the open list
    
@@ -23,7 +24,6 @@
     
     d) for each successor    
         1. if successor is the goal, stop search
-    
         2. else, compute both g and h for successor
           successor.g = q.g + distance between successor and q
           successor.h = distance from goal to successor (This can be done using many ways, we will discuss three heuristics- Manhattan, Diagonal and Euclidean Heuristics)
@@ -33,7 +33,7 @@
 
     e) push q on the closed list
     end (while loop)
-
+```
 ## Program:
 ```
 from collections import defaultdict
